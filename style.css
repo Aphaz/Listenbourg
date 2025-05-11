@@ -67,7 +67,7 @@ nav a:hover {
 
 /* === Contenu principal === */
 main {
-    margin-top: 60px; /* pour éviter la superposition de la nav */
+    margin-top: 40px; /* pour éviter la superposition de la nav , JAI CHANGE A 17H36*/
     padding: 20px;
     max-width: 1000px;
     margin-left: auto;
@@ -107,7 +107,9 @@ header h1 {
 .intro p {
     margin-bottom: 20px;
 }
-
+ul {
+    margin-left: 20px;
+}
 /* === Titres de sections === */
 h2 {
     font-size: 2.2em;
