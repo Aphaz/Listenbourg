@@ -70,6 +70,7 @@ nav a {
   text-decoration: none;
   padding: 10px 15px;
   margin: 0 15px;
+  display: inline-block;
 }
 
 nav a:hover {
@@ -78,7 +79,7 @@ nav a:hover {
 
 /* === Contenu principal === */
 main {
-  margin-top: 60px; /* Ajusté pour éviter la superposition de la nav */
+  margin-top: 60px;
   padding: 20px;
 }
 
@@ -174,7 +175,7 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* === Responsive === */
+/* === Responsive tablette (max 768px) === */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2.5em;
@@ -200,6 +201,53 @@ img {
 
   .sous-sujet-box {
     padding: 10px;
+  }
+}
+
+/* === Responsive téléphone (max 480px) === */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    padding: 8px 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+  }
+
+  header {
+    padding: 30px 0 15px 0;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  .intro {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .sujet-box h3 {
+    font-size: 1.5em;
+  }
+
+  .sous-sujet-box h4 {
+    font-size: 1.2em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
