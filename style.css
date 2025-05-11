@@ -1,4 +1,3 @@
-
 /* === Style de base === */
 * {
   box-sizing: border-box;
@@ -130,13 +129,15 @@ h2 {
   font-weight: bold;
 }
 
+/* === Boîtes de sujets === */
 .sujet-box,
 .intro,
 .sous-sujet-box {
-  max-width: 75%;
+  max-width: 75%; /* Les boîtes principales et sous-boîtes prennent 75% de la largeur de l'écran */
   margin-left: auto;
   margin-right: auto;
 }
+
 /* === Boîtes de sujets === */
 .sujet-box {
   display: flex;
