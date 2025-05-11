@@ -12,17 +12,14 @@
     <h1>Le Listenbourg</h1>
   </header>
 
- <nav>
-  <div class="nav-container">
-    <div class="logo">Mon Site</div>
-    <div class="burger" id="burger">&#9776;</div>
-    <div class="nav-links" id="navLinks">
-      <a href="#section1">Section 1</a>
-      <a href="#section2">Section 2</a>
-      <a href="#section3">Section 3</a>
-    </div>
-  </div>
-</nav>
+  <nav role="navigation">
+    <a href="#intro">Introduction</a>
+    <a href="#histoire">Histoire</a>
+    <a href="#localisation">Localisation</a>
+    <a href="#geographie">Géographie</a>
+    <a href="#cuisine">Cuisine</a>
+    <a href="#conclusion">Conclusion</a>
+  </nav>
 
   <main>
 
@@ -176,11 +173,5 @@
     <p>&copy; 2025 - Le Listenbourg. Tous droits réservés.</p>
   </footer>
 
-<script>
-  document.getElementById('burger').addEventListener('click', function() {
-    document.getElementById('navLinks').classList.toggle('active');
-  });
-</script>
-	
 </body>
 </html>
