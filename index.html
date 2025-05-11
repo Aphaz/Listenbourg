@@ -12,20 +12,16 @@
     <h1>Le Listenbourg</h1>
   </header>
 
-  <nav>
-  <div class="burger-menu" onclick="toggleMenu()">☰</div>
-  <div class="nav-links" id="nav-links">
-    <a href="#introduction">Introduction</a>
+  <nav role="navigation">
+    <a href="#intro">Introduction</a>
     <a href="#histoire">Histoire</a>
+    <a href="#localisation">Localisation</a>
     <a href="#geographie">Géographie</a>
     <a href="#cuisine">Cuisine</a>
-    <a href="#culture">Culture</a>
-    <a href="#tableau">Tableau</a>
-  </div>
-</nav>
+    <a href="#conclusion">Conclusion</a>
+  </nav>
 
-
-  <main class="container">
+  <main>
 
     <!-- INTRODUCTION -->
     <section id="intro" class="intro sujet-box">
@@ -33,8 +29,6 @@
       <div class="sous-sujet-box">
         <p>
           Le Listenbourg est un pays discret mais fascinant, situé à la croisée des influences ibériques et est-européennes. Ce territoire, riche d’une histoire millénaire et d’une diversité géographique et culturelle exceptionnelle, attire peu à peu l'attention des voyageurs en quête d'authenticité. De ses montagnes majestueuses à ses plages tranquilles, en passant par ses villages pittoresques, le Listenbourg offre un véritable trésor de découvertes. Sa cuisine unique, ses paysages préservés et ses traditions vivantes en font une destination incontournable.        </p>
-   	<a href="https://listenbourg-offi.fandom.com/fr/wiki/Listenbourg" target="_blank">Pour des infos complementaires sur le Listenbourg et son histoire cliquez ici.</a>
-
       </div>
     </section>
 
@@ -178,12 +172,6 @@
   <footer>
     <p>&copy; 2025 - Le Listenbourg. Tous droits réservés.</p>
   </footer>
-<script>
-  function toggleMenu() {
-    const links = document.getElementById("nav-links");
-    links.classList.toggle("active");
-  }
-</script>
 
 </body>
 </html>
