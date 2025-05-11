@@ -69,46 +69,9 @@ nav a:hover {
     background-color: #555;
 }
 
-/* === Menu burger (mobile) === */
-.burger-menu {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    padding: 0 20px;
-}
-
-/* Menu de liens dans la nav */
-.nav-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
-    .burger-menu {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    nav a {
-        padding: 15px;
-        margin: 0;
-        border-top: 1px solid #444;
-    }
-}
-
 /* === Contenu principal === */
 main {
-    margin-top: 40px; /* pour éviter la superposition de la nav */
+    margin-top: 40px; /* pour éviter la superposition de la nav , JAI CHANGE A 17H36*/
     padding: 20px;
     max-width: 1000px;
     margin-left: auto;
@@ -148,7 +111,6 @@ header h1 {
 .intro p {
     margin-bottom: 20px;
 }
-
 ul {
     margin-left: 20px;
 }
@@ -160,6 +122,80 @@ h2 {
     margin: 0 0 15px 0;
     text-align: center;
     font-weight: bold;
+}
+
+/* === Boîtes de sujets === */
+.sujet-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sujet-box h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* === Boîtes de sous-sujets === */
+.sous-sujet-box {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sous-sujet-box h4 {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* === Images === */
+img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === Responsive général === */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .intro {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        margin: 0 10px;
+    }
+
+    .sujet-box {
+        padding: 15px;
+    }
+
+    .sous-sujet-box {
+        padding: 10px;
+    }
 }
 
 /* === Pied de page === */
@@ -175,4 +211,41 @@ footer {
 
 footer p {
     font-size: 16px;
+}
+
+/* === Menu burger (mobile) === */
+.burger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+/* Menu de liens dans la nav */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 15px;
+        margin: 0;
+        border-top: 1px solid #444;
+    }
 }
