@@ -130,15 +130,6 @@ h2 {
 }
 
 /* === Boîtes de sujets === */
-.sujet-box,
-.intro,
-.sous-sujet-box {
-  max-width: 75%; /* Les boîtes principales et sous-boîtes prennent 75% de la largeur de l'écran */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* === Boîtes de sujets === */
 .sujet-box {
   display: flex;
   flex-direction: column;
